@@ -4,6 +4,9 @@ class Show < ActiveRecord::Base
     a.rating
   end
 
+  def self.lowest_rating
+  end
+
   def self.most_popular_show
     Show.order(rating: :desc).first
   end
