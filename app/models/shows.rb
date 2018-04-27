@@ -1,9 +1,7 @@
 class Show < ActiveRecord::Base
   def self.highest_rating
-
     a = Show.where("rating = 10").first
-    binding.pry
-    a.first.rating
+    a.rating
   end
 
   def self.most_popular_show
